@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  userauthenticationservice:
+    image: ${DOCKER_REGISTRY-}userauthenticationservice
+    build:
+      context: .
+      dockerfile: UserAuthenticationService/Dockerfile
